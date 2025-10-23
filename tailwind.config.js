@@ -16,6 +16,20 @@ module.exports = {
         muted: "rgb(var(--muted))",
         accent: "rgb(var(--accent))",
       },
+      boxShadow: {
+        "glass-sm": "0 0 30px 5px rgba(254,254,91,0.7)",
+        "glass-hover": "0 0 60px 20px rgba(254,254,91,0.9)",
+      },
+      keyframes: {
+        "spin-reverse": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg)" },
+        },
+      },
+      animation: {
+        "spin-slow": "spin 40s linear infinite",
+        "spin-slow-reverse": "spin-reverse 40s linear infinite ",
+      },
     },
   },
   plugins: [],
