@@ -1,3 +1,5 @@
+const { radialGradient } = require("framer-motion/client");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,6 +17,10 @@ module.exports = {
         foreground: "rgb(var(--foreground))",
         muted: "rgb(var(--muted))",
         accent: "rgb(var(--accent))",
+      },
+      backgroundImage: {
+        "firefly-radial":
+          "radial-gradient(50% 50% at 50% 50%, rgba(173, 216, 230, 5) 0%, rgba(217, 217, 217, 0) 100%)",
       },
       boxShadow: {
         "glass-sm": "0 0 30px 5px rgba(254,254,91,0.7)",
