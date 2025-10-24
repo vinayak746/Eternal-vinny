@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --background: 27 27 27;
-    --foreground: 225 225 225;
-    --muted: 115 115 115;
-    --accent: 254 254 91;
-    /* #FEFE5B */
+    --background: 0 0 0; /* pure black */
+    --foreground: 225 225 225; /* light text */
+    --muted: 120 175 235; /* soft muted blue for subtle elements */
+    --accent: 254 254 91; /* vivid neon yellow for high contrast */
+    /* #FEFE5B for accent */
   }
 }
 
