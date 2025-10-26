@@ -20,7 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         "firefly-radial":
-          "radial-gradient(50% 50% at 50% 50%, rgba(173, 216, 230, 5) 0%, rgba(217, 217, 217, 0) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(100, 130, 160, 0.85) 0%, rgba(60, 80, 110, 0) 100%)",
       },
       boxShadow: {
         "glass-inset": "0 0 30px 5px rgba(255, 255, 255, 0.8)", // soft, bright white glass glow
