@@ -109,7 +109,7 @@ export const BtnList = [
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/vinayak-arora7461",
+    link: "https://www.linkedin.com/in/vinayak-arora746",
     icon: "linkedin",
     newTab: true,
   },
