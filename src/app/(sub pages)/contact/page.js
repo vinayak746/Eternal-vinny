@@ -8,7 +8,7 @@ export default function Contact() {
       <Image
         src={bg}
         alt="background.image"
-        className="w-full h-full object-cover fixed top-0 left-0 object-center opacity-80  "
+        className="w-full h-full object-cover fixed top-0 left-0 object-center opacity-80 loader={lazy} "
       />
       <article className="relative w-full flex flex-col items-center justify-center space-y-5">
         <div className="flex flex-col items-center justify-center space-y-6 w-3/4">

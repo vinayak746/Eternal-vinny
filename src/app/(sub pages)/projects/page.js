@@ -12,7 +12,9 @@ export default function Home() {
       <Image
         src={bg}
         alt="background.image"
-        className="w-full h-full object-cover fixed top-0 left-0 object-center opacity-80  "
+        className="w-full h-full object-cover fixed top-0 left-0 object-center opacity-80 
+        "
+        loader={lazy}
       />
       <ProjectList projects={projectsData} />
       <div className="flex items-center justify-center fixed top-20 -left-10 h-screen  ">
