@@ -2,6 +2,8 @@ import Image from "next/image";
 import bg from "../../../public/background/projects-background.png";
 import ProjectList from "../components/projects";
 import { projectsData } from "../data";
+import RenderModel from "../components/RenderModel";
+import ShadowSlave from "../components/models/ShadowSlave";
 
 export default function Home() {
   return (
@@ -13,6 +15,10 @@ export default function Home() {
         className="w-full h-full object-cover object-center opacity-80 absolute "
       />
       <ProjectList projects={projectsData} />
+
+      <RenderModel>
+        <ShadowSlave />
+      </RenderModel>
     </main>
   );
 }
