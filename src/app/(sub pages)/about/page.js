@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../../../public/background/about-background.png";
+import bg from "../../../../public/background/about.png";
 
 import RenderModel from "../../components/RenderModel";
 import Mask from "@/app/components/models/Mask";
