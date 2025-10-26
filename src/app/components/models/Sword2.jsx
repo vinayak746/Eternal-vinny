@@ -1,16 +1,10 @@
 "use client";
+
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
 
-export default function Sword(props) {
-  const { nodes, materials } = useGLTF("/models/sword.glb");
-  const modelRef = useRef();
-  useFrame(() => {
-    if (modelRef.current) {
-      modelRef.current.rotation.y += 0.01;
-    }
-  });
+export default function Sword2(props) {
+  const { nodes, materials } = useGLTF("/models/sword2-transformed.glb");
   return (
     <group
       {...props}
@@ -18,7 +12,6 @@ export default function Sword(props) {
       scale={[5, 5, 5]}
       position={[0, -2.5, 0]}
       rotation={[0, Math.PI / 2, 0]} // rotate 90° around Y
-      ref={modelRef}
     >
       <mesh
         castShadow
@@ -30,4 +23,4 @@ export default function Sword(props) {
   );
 }
 
-useGLTF.preload("/models/sword.glb");
+useGLTF.preload("/models/sword2-transformed.glb");

@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <div className="w-full fixed h-screen flex items-center justify-center z-10">
-      <div className="w-max flex items-center justify-center relative hover:pause animate-spin-slow group ">
+      <div className="w-max flex items-center justify-center relative hover:pause animate-spin-slow group  ">
         {BtnList.map((btn, index) => {
           const angle = index * angleIncrement;
           const x = `${Math.cos(angle) * radiusVW}vw`;
