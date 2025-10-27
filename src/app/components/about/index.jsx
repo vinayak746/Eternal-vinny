@@ -2,18 +2,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import React from "react";
 
-const ItemLayout = ({ children, className }) => {
-  return (
-    <div
-      className={clsx(
-        "custom-bg p-8 rounded-xl flex items-center justify-center space-y-8 z-10",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-};
+import ItemLayout from "./ItemLayout";
 
 const AboutDetails = () => {
   return (
