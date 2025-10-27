@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../public/background/home-new.png";
+import bg from "../../public/background/home-newer.png";
 import ShadowSlave from "./components/models/ShadowSlave";
 import RenderModel from "./components/RenderModel";
 import Navigation from "./components/navigation";
