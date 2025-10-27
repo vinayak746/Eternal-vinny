@@ -1,99 +1,173 @@
-# Next.js Creative Portfolio Tutorial: Build Amazing Portfolio Website with Next.js, Three.js, and Tailwind CSS 🔥
+# Eternal Vinny
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+![Live demo](https://img.shields.io/badge/Live-Demo-brightgreen)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
+![Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/CSS-Tailwind%20CSS-blue?logo=tailwindcss)
 
-This repository contains **starter code** for Next.js Creative Portfolio website built using Next.js and Three.js. <br />
+Eternal Vinny is an interactive personal portfolio showcasing real-time 3D models and immersive page backgrounds built with Next.js and WebGL. This README is written for visitors, recruiters and other developers so they can quickly understand what the project does, why it exists, and how to run or contribute to it.
 
-For Demo checkout following link👇: <br />
-[Nextjs Creative Portfolio Website Demo](https://next-js-creative-portfolio-website.vercel.app/) <br />
+Live site: https://eternal-vinny.vercel.app
 
-Final Code👇: <br />
-➡ Link 💚: [Nextjs Creative Portfolio Website Final Code](https://github.com/codebucks27/Next.js-Creative-Portfolio-Website) <br />
-<!--- ➡ Link 2💚(If you want to support): [Nextjs Creative Portfolio Website Final Code](https://codebucks.gumroad.com/l/ypzlu) <br /> --->
+## Why this project exists
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-➡ Tutorial Link 💚: [Personal Portfolio Website with Next.js, Three.js & Tailwind CSS Tutorial](https://youtu.be/T5t46vuW8fo) 
-[![YouTube Video Views](https://img.shields.io/youtube/views/T5t46vuW8fo
-)](https://youtu.be/T5t46vuW8fo) <br />
+- Demonstrate integration of 3D assets (GLB/GLTF) into a modern React/Next app.
+- Showcase responsive design and page-specific visual storytelling.
+- Provide a fast, deployable portfolio hosted on Vercel.
 
-💚 Checkout my personal website [DevDreaming](https://devdreaming.com) <br />
+Who should look here: recruiters evaluating frontend / WebGL skills, developers learning react-three-fiber, and artists who want a web portfolio for 3D models.
 
----
-# ⭐DO NOT FORGET TO STAR THIS REPO⭐
----
+## Quick preview
 
-## Images of The Portfolio Website:
+Hero/background used on the site:
 
-#### Home
-![Nextjs Creative Portfolio Website](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/Home-desktop.png)
+![Hero background](public/background/home-newer.png "Site hero background")
 
-#### About
-![Nextjs Creative Portfolio Website About Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/About-desktop-full.png)
+Smaller background examples (these are the same files imported by the app):
 
-#### Projects
-![Next.js Creative Portfolio Website Projects Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/Projects-desktop.png)
+| Projects | About | Contact |
+|---|---|---|
+| ![Projects](public/background/projects-background.png "Projects background") | ![About](public/background/about.png "About background") | ![Contact](public/background/contact.png "Contact background") |
 
-#### Contact
-![Next.js Creative Portfolio Website Contact Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/Contact-desktop.png)
+> Note: these images live in `public/background` and are imported by files under `src/app` (see `src/app/page.js` and the `(sub pages)` folder).
 
-#### Mobile Version
-![Next.js Creative Portfolio Website Contact Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/Home-mobile.png)
-![Next.js Creative Portfolio Website Contact Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/About-mobile.png)
-![Next.js Creative Portfolio Website Contact Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/Projects-mobile.png)
-![Next.js Creative Portfolio Website Contact Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/Contact-mobile.png)
+## Key features
 
-## Resources Used in This Project
+- Interactive 3D models (GLB/GLTF) rendered in the browser
+- Page-specific hero backgrounds and responsive layouts
+- Clean, minimal UI with Tailwind CSS
+- Fast deployment on Vercel with Next.js app router
 
-#### 3D Models
+## Tech stack
 
-- ["Tim Mckee - Boy Wizard"](https://skfb.ly/6YATu) by [elbertwithane is licensed under Creative Commons Attribution ](http://creativecommons.org/licenses/by/4.0/).
-- ["Stylized wizard hat"](https://skfb.ly/ozxOQ) by [Enkarra is licensed under Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
-- ["Wizard Staff"](https://skfb.ly/6QYZw) by [Toymancer Studio is licensed under Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+- Next.js (React + App Router)
+- React
+- Tailwind CSS
+- Three.js + @react-three/fiber (3D rendering)
+- Vercel (hosting)
 
-#### AI Images
+## 3D assets included
 
-- Created with the help of [Playground AI](https://playgroundai.com/)
+The repository stores the 3D models used on the site in `public/models`:
 
-#### Github Stats & Details
+- `hat-transformed.glb`
+- `mask.glb`
+- `shadow-slave-model.glb`
+- `staff-transformed.glb`
+- `sword.glb`
+- `sword2-transformed.glb`
+- `wizard-transformed.glb`
 
-- [Github ReadMe Stats](https://github.com/anuraghazra/github-readme-stats)
-- [Skills Icons](https://github.com/tandpfun/skill-icons)
-- [Github Readme Streak Stats](https://github.com/denvercoder1/github-readme-streak-stats)
+These are rendered through the components in `src/app/components/models`.
 
-#### Development Resources
+## Get the project running (local)
 
-- Fonts from [Google Fonts](https://fonts.google.com/) <br />
-- Icons from [Lucide Icons](https://lucide.dev/) <br />
-- Notifications from [Sonner](https://sonner.emilkowal.ski/) <br />
-- Form created using [react-hook-form](https://react-hook-form.com/) <br />
-- Animations using [framer-motion](https://www.framer.com/motion/) <br />
-- Emails using [Emailjs](https://www.emailjs.com/) <br />
-- Convert 3d models to JSX using [Gltf JSX](https://github.com/pmndrs/gltfjsx)
+PowerShell commands:
 
-#### Audio 
-
-- Music by <a href="https://pixabay.com/users/shidenbeatsmusic-25676252/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=20772">Shiden Beats Music</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=20772">Pixabay</a>
-
----
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, install the dependencies and run the development server:
-
-```bash
-npm install # to install all dependencies
-
+```powershell
+git clone https://github.com/vinayak746/Eternal-vinny.git
+cd Eternal-vinny
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
+
+## Development notes
+
+- Background images are in `public/background` and imported directly in page components.
+- 3D models are in `public/models` and loaded with the GLTF loader inside model components.
+- If you add new GLB/GLTF files, keep file sizes reasonable for faster load times.
+
+## How to contribute
+
+If you'd like to suggest improvements or submit fixes:
+
+1. Open an issue describing the change or enhancement.
+2. Create a branch and submit a pull request.
+
+Small ways to help:
+
+- Add accessibility improvements (alt text, keyboard navigation)
+- Reduce large image/model file sizes and optimize for web
+- Add tests or CI checks if you modify app behavior
+
+## Suggestions / next improvements
+
+- Add a short GIF or MP4 showing the 3D model interaction in the README header for quicker visual impact.
+- Rename or archive the older `website images` folder to reduce confusion.
+- Add badges for license or CI when applicable.
+
+## Contact
+
+Built and maintained by Vinayak. Use the site's contact form or open an issue on this repository for direct feedback or collaboration requests.
+
+
+Thank you for visiting — tell me if you want a GIF, a TOC, or badges for license/CI and I will add them.
+## Table of contents
+
+- [Why this project exists](#why-this-project-exists)
+- [Quick preview](#quick-preview)
+- [Key features](#key-features)
+- [Tech stack](#tech-stack)
+- [3D assets included](#3d-assets-included)
+- [How models are used (example)](#how-models-are-used-example)
+- [Get the project running (local)](#get-the-project-running-local)
+- [Development notes & optimization](#development-notes--optimization)
+- [Accessibility & best practices](#accessibility--best-practices)
+- [How to contribute](#how-to-contribute)
+- [Roadmap](#roadmap)
+- [Contact](#contact)
+
+## How models are used (example)
+
+Below is a short, real example from `src/app/components/models/ShadowSlave.jsx` showing how a GLB is loaded and animated with `@react-three/fiber` + `@react-three/drei` (this is verbatim from the project):
+
+```jsx
+"use client";
+import React, { useRef } from "react";
+import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+
+export default function ShadowSlave(props) {
+	const { nodes, materials } = useGLTF("/models/shadow-slave-model.glb");
+	const modelRef = useRef();
+	useFrame((state) => {
+		modelRef.current.position.y =
+			-1.5 + Math.sin(state.clock.elapsedTime) * 0.15;
+	});
+	return (
+		<group ref={modelRef} position={[0, -1.5, 0]} scale={[1.67, 1.67, 0.9]}>
+			<mesh geometry={nodes.model.geometry} material={materials.model} />
+		</group>
+	);
+}
+
+useGLTF.preload("/models/shadow-slave-model.glb");
+```
+
+This demonstrates the project's pattern:
+
+- Put GLB/GLTF files in `public/models` so they are served statically
+- Use `useGLTF()` to load models from `/models/<file>.glb`
+- Animate or position the model with `useFrame()` and refs
+
+## Development notes & optimization
+
+- Keep 3D model sizes small for fast page loads (compress and decimate meshes where possible).
+- Use texture atlases and smaller resolution textures for mobile.
+- Preload important models (`useGLTF.preload`) to reduce perceived load time.
+- Consider lazy-loading heavy models on scroll or user interaction to improve time-to-first-render.
+
+## Accessibility & best practices
+
+- Add descriptive alt text to images and meaningful aria-labels to interactive controls.
+- Ensure contrast and keyboard navigation for interactive parts of the UI.
+- Test with Lighthouse for performance and accessibility and iterate on results.
+
+## Roadmap
+
+- Add a short animated GIF demo in the README header (3–5s) — high impact for visitors.
+- Add CI (lint/test) and a license file.
+- Optimize models and add progressive loading.
+
