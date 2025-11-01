@@ -27,7 +27,7 @@ Smaller background examples (these are the same files imported by the app):
 
 | Projects | About | Contact |
 |---|---|---|
-| ![Projects](public/background/projects-background.png "Projects background") | ![About](public/background/about.png "About background") | ![Contact](public/background/contact.png "Contact background") |
+| ![Projects](public/background/projects-background.png "Projects background") | ![About](public/background/about.png "About background") | ![Contact](public/background/contact-new.png "Contact background") |
 
 > Note: these images live in `public/background` and are imported by files under `src/app` (see `src/app/page.js` and the `(sub pages)` folder).
 
