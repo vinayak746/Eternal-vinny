@@ -183,4 +183,19 @@ This demonstrates the project's pattern:
 - Add a short animated GIF demo in the README header (3–5s) — high impact for visitors.
 - Add CI (lint/test) and a license file.
 - Optimize models and add progressive loading.
+- 
+## 📄 License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**What this means:**
+- ✅ Commercial use allowed
+- ✅ Modification allowed
+- ✅ Distribution allowed
+- ✅ Private use allowed
+- ⚠️ Liability and warranty not provided
+
+Copyright © 2025 [Vinayak Arora](https://github.com/vinayak746)
 
