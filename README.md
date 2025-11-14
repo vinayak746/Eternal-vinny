@@ -5,6 +5,17 @@
 ![Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)
 ![Tailwind CSS](https://img.shields.io/badge/CSS-Tailwind%20CSS-blue?logo=tailwindcss)
 
+## 🎬 Demo
+
+<div align="center">
+
+  
+  https://github.com/user-attachments/assets/98aeac7a-a015-46ac-8189-8fa89837d9f0
+
+</video>
+</div>
+
+
 Eternal Vinny is an interactive personal portfolio showcasing real-time 3D models and immersive page backgrounds built with Next.js and WebGL. This README is written for visitors, recruiters and other developers so they can quickly understand what the project does, why it exists, and how to run or contribute to it.
 
 Live site: https://eternal-vinny.vercel.app
@@ -13,6 +24,8 @@ Live site: https://eternal-vinny.vercel.app
 
 - Demonstrate integration of 3D assets (GLB/GLTF) into a modern React/Next app.
 - Showcase responsive design and page-specific visual storytelling.
+
+- 
 - Provide a fast, deployable portfolio hosted on Vercel.
 
 Who should look here: recruiters evaluating frontend / WebGL skills, developers learning react-three-fiber, and artists who want a web portfolio for 3D models.
