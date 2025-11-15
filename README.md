@@ -1,9 +1,10 @@
 # Eternal Vinny
 
-![Live demo](https://img.shields.io/badge/Live-Demo-brightgreen)
-![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
-![Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)
-![Tailwind CSS](https://img.shields.io/badge/CSS-Tailwind%20CSS-blue?logo=tailwindcss)
+[![Live demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://eternal-vinny.vercel.app)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com/docs)
+[![Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)](https://nextjs.org/docs)
+[![Tailwind CSS](https://img.shields.io/badge/CSS-Tailwind%20CSS-blue?logo=tailwindcss)](https://tailwindcss.com/docs)
 
 ## 🎬 Demo
 
@@ -53,23 +54,19 @@ Smaller background examples (these are the same files imported by the app):
 
 ## Tech stack
 
-- Next.js (React + App Router)
+- [Next.js](https://nextjs.org/docs) (React + App Router)
 - React
-- Tailwind CSS
+- [Tailwind CSS](https://tailwindcss.com/docs)
 - Three.js + @react-three/fiber (3D rendering)
-- Vercel (hosting)
+- [Vercel](https://vercel.com/docs) (hosting)
 
 ## 3D assets included
 
 The repository stores the 3D models used on the site in `public/models`:
 
-- `hat-transformed.glb`
 - `mask.glb`
 - `shadow-slave-model.glb`
-- `staff-transformed.glb`
 - `sword.glb`
-- `sword2-transformed.glb`
-- `wizard-transformed.glb`
 
 These are rendered through the components in `src/app/components/models`.
 
@@ -185,8 +182,6 @@ This demonstrates the project's pattern:
 - Optimize models and add progressive loading.
 - 
 ## 📄 License
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
