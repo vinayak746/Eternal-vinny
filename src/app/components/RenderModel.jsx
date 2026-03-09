@@ -12,9 +12,9 @@ const RenderModel = ({ children, className }) => {
         "w-full h-[60vh] md:w-screen md:h-screen -z-10 relative",
         className
       )}
-      dpr={[1, 1.5]}
+      dpr={[1, 1]}
       shadows={false}
-      gl={{ antialias: true, powerPreference: "high-performance" }}
+      gl={{ antialias: false, powerPreference: "high-performance", alpha: true }}
       onCreated={(state) => {
         try {
           if (typeof window !== "undefined" && state.gl.setPixelRatio) {

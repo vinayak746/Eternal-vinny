@@ -22,6 +22,7 @@
         hover:shadow-glass-sm;
   }
 }
+
 @keyframes move {
   0% {
     transform: translate(0, 0);
@@ -29,4 +30,21 @@
   100% {
     transform: translate(100px, 100px);
   }
+}
+
+/* GPU-accelerated animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }

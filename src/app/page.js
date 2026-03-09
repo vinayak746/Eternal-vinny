@@ -10,9 +10,10 @@ export default function Home() {
         src={bg}
         alt="background.image"
         fill
-        className="w-full h-full object-cover object-center opacity-80 absolute -z-10
-        loader={lazy}
-        "
+        priority
+        quality={75}
+        sizes="100vw"
+        className="w-full h-full object-cover object-center opacity-80 absolute -z-10"
       />
       <div className="w-full h-screen">
         {/* navigation and 3d model */}

@@ -31,7 +31,8 @@ const Navigation = () => {
               variants={container}
               initial="hidden"
               animate="show"
-              className="w-max flex items-center justify-center relative hover:pause animate-spin-slow group"
+              className="w-max flex items-center justify-center relative hover:pause animate-spin-slow group will-change-transform"
+              style={{ backfaceVisibility: "hidden" }}
             >
               {BtnList.map((btn, index) => {
                 const angleRad = (index * angleIncrement * Math.PI) / 180;

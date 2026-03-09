@@ -10,32 +10,41 @@ const createFirefly = () => ({
 
 const FireFliesBackground = () => {
   const [fireflies, setFireflies] = useState([]);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+    // Initial fireflies
+    const initialFireflies = Array.from({ length: 15 }, createFirefly);
+    setFireflies(initialFireflies);
+
     const addFireflyPeriodically = () => {
-      const newFirefly = createFirefly();
-      setFireflies((currentFireflies) => [
-        ...currentFireflies.slice(-30),
-        newFirefly,
-      ]);
+      setFireflies((currentFireflies) => {
+        if (currentFireflies.length >= 15) return currentFireflies;
+        return [...currentFireflies, createFirefly()];
+      });
     };
 
-    const interval = setInterval(addFireflyPeriodically, 1000);
+    const interval = setInterval(addFireflyPeriodically, 2000);
 
     return () => clearInterval(interval);
   }, []);
 
+  if (!mounted) return null;
+
   return (
-    <div className="fixed top-0 left-0 w-full h-full -z-1 overflow-hidden">
+    <div className="fixed top-0 left-0 w-full h-full -z-1 overflow-hidden pointer-events-none">
       {fireflies.map((firefly) => {
         return (
           <div
             key={firefly.id}
-            className="absolute rounded-full w-[10px] h-[10px] bg-firefly-radial"
+            className="absolute rounded-full w-[10px] h-[10px] bg-firefly-radial will-change-transform"
             style={{
               top: firefly.top,
               left: firefly.left,
               animation: `move ${firefly.animationDuration} infinite alternate`,
+              backfaceVisibility: "hidden",
+              perspective: 1000,
             }}
           ></div>
         );
